@@ -1,0 +1,29 @@
+#navbar-toggler {
+  color: black;
+  background-color: white;
+}
+#header {
+  text-align: center;
+  width: 100px;
+}
+
+#image span{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#questions{
+  text-align: center;
+}
+
+#answer {
+  width: auto;
+}
+#inside {
+  width: 20px;
+}
+
+
+
+  
