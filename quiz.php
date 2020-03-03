@@ -76,7 +76,7 @@
     <!-- End Answers -->
 </br>
 
-    <button type="submit">Submit</button>
+    <button class = "submitButton" type="submit">Submit</button>
 
 
 <!-- Score -->

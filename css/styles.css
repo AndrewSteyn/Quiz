@@ -3,12 +3,12 @@
   background-color: white;
 }
 #header {
-  font-family: 'Bangers';
+  font-family:'Bangers';
   text-align: center;
   width: 60%;
 }
 
-#image span{
+#image{
   width: 100px;
   margin-left: 50px;
   margin-right: 50px;
@@ -41,7 +41,11 @@
   text-align: center;
 }
 
-h3 {
+.submitButton{
+  background-color: rgb(12, 112, 16);
+  border: none;
+  color: white;
+  padding: 10px 30px;
   text-align: center;
+  font-size: 16px;
 }
-  
