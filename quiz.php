@@ -40,15 +40,134 @@
 </br>
     <?php
 
-        $questions = array(' 1. In which year were the first of the questions develpoed?',' 2. when?',' 3. Where?',' 4. Who?',' 5. With What?');
-        $photo= array('quiztest.jpg','when.jpeg','where.jpeg','who.jpeg','with-what.jpeg');
-        $answer = array(array('not very well','better thana most','jasdj asfdasd','asjdjds dsjajda asdaj'),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''),array('','','',''));
+        $big = array(array('1. In which year were the first of the questions developed?',
+                           'when?',
+                           'Where?',
+                           'Who?',
+                           'With What?',
+                           'hjqwj?',
+                           'jafj?',
+                           'asfjsaf?',
+                           'jasf?',
+                           'jasfj',
+                           'njaff',
+                           'jho?',
+                           'pghm?',
+                           'tj?',
+                           'lkn?',
+                           'tf?',
+                           'ljvxbc?',
+                           'fbsd?',
+                           'oafsk?',
+                           'oei?',
+                            ),
+                    array('quiztest.jpg',
+                          'when.jpg',
+                          'where.jpg',
+                          'who.jpg',
+                          'with-what.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                          'who.jpg',
+                        ),
+                    array(array('name',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',    
+                                ),
+                          array('value',
+                                '', 
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',   
+                                ),
+                          array('answers',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                                '',
+                             )  
+                            )
+                            
+                        )
     ?>
+
+<?php
+for ($x=0; $x<count($big[0]); ++$x){
+    echo"\n".$big[1][$x];
+    echo"\n".$big[0][$x];
+        for($z=o; $z,count($big[2]); ++$z)
+        echo"\n".$big[2][$x][$z];
+}
+
+
+?>
+
+
+
     <!-- Image -->
     <div id="image">
         <?php
         $i=0;
-            echo '<img src=images/'."$photo[0]".'>';
+            echo '<img src=images/'."$big[1][0]".'>';
         ?>
     </div>
     <!-- End Image -->
@@ -61,24 +180,24 @@
     <!-- End Question -->
 </br>
     <!-- Answers -->
-    <div id="answer">
-    <button class="button">1.<?php echo $answer[0][0] ?></button>
+    <form role="form" method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
+    
+    <button class="button" type="radio">1.<?php echo $answer[0][0] ?></button>
 </br>
 </br>
-    <button class="button">2.<?php echo $answer[0][1] ?></button>
+    <button class="button" type="radio">2.<?php echo $answer[0][1] ?></button>
 </br>
 </br>
-    <button class="button">3.<?php echo $answer[0][2] ?></button>
+    <button class="button" type="radio">3.<?php echo $answer[0][2] ?></button>
 </br>
 </br>
-    <button class="button">4.<?php echo $answer[0][3] ?></button>
-</div>
-    <!-- End Answers -->
+    <button class="button" type="radio">4.<?php echo $answer[0][3] ?></button>
+
 </br>
 
-    <button class = "submitButton" type="submit">Submit</button>
-
-
+    <button class="submitButton" type="submit">Submit</button>
+</form>
+ <!-- End Answers -->
 <!-- Score -->
 <?php
 $score=10;
