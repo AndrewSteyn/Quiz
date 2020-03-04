@@ -39,16 +39,15 @@
     <!-- End Headr -->
 </br>
     <?php
-
-        $big = array(array('1. In which year were the first of the questions developed?',
-                           'when?',
-                           'Where?',
-                           'Who?',
-                           'With What?',
-                           'hjqwj?',
-                           'jafj?',
-                           'asfjsaf?',
-                           'jasf?',
+        $big = array(array('When does the first night start?',
+                           'How many melee and ranged creeps spawn in the first wave, for only one lane?',
+                           'Pick one set of the neutral creeps that can\'t spawn in the medium camp.',
+                           'At the start of the game, only Bounty runes can spawn.',
+                           'Once placed, Observer Ward will last for how long?',
+                           'You can reveal the Wards (Observer and Sentry Wards) with Dust.',
+                           'What is the correct amount of experience a Hero has to gain to advance from Level 1 to Level 2?',
+                           'First Roshan spawns with how much HP?',
+                           'Once you activate a Haste rune, your movement speed is set to - ?',
                            'jasfj',
                            'njaff',
                            'jho?',
@@ -124,9 +123,9 @@
                                 '',
                                 '',   
                                 ),
-                          array('answers',
-                                '',
-                                '',
+                          array(array('At minute 4','At minute 5','At minute 6','At minute 10'),
+                                array('4 melee creeps, 1 ranged creep','3 melee creeps, 1 ranged creep','4 melee creeps, 2 ranged creeps','3 melee creeps, 2 ranged creeps'),
+                                array('Centaur camp','Mud Golems','Hellbear camp','wolf Camp'),
                                 '',
                                 '',
                                 '',
@@ -147,74 +146,20 @@
                              )  
                             )
                             
-                        )
+                            );
     ?>
-
+<form role="form" method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
 <?php
-for ($x=0; $x<count($big[0]); ++$x){
-    echo"\n".$big[1][$x];
-    echo"\n".$big[0][$x];
-        for($z=o; $z,count($big[2]); ++$z)
-        echo"\n".$big[2][$x][$z];
+for ($x=0; $x<count($big[0]); ++$x){?>
+    <h1><?php echo"\n".$big[1][$x];?></h1>
+    <img class=image src="<?php echo"\n".$big[0][$x];?>">
+      <?php  for($z=o; $z,count($big[2]); ++$z)?>
+    <button class="button" type="radio" name="<?php echo"\n".$big[2][0][$x];?>" value="<?php echo"\n".$big[2][1][$z]; ?>"><?php echo"\n".$big[2][2][$z]; ?></button>
+</br>
 }
-
-
-?>
-
-
-
-    <!-- Image -->
-    <div id="image">
-        <?php
-        $i=0;
-            echo '<img src=images/'."$big[1][0]".'>';
-        ?>
-    </div>
-    <!-- End Image -->
-</br>
-    <!-- Question -->
-    <a id="question">
-       <?php
-            echo '<h3>'."$questions[0]".'</3>'."</br>";
-        ?>
-    <!-- End Question -->
-</br>
-    <!-- Answers -->
-    <form role="form" method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
-    
-    <button class="button" type="radio">1.<?php echo $answer[0][0] ?></button>
-</br>
-</br>
-    <button class="button" type="radio">2.<?php echo $answer[0][1] ?></button>
-</br>
-</br>
-    <button class="button" type="radio">3.<?php echo $answer[0][2] ?></button>
-</br>
-</br>
-    <button class="button" type="radio">4.<?php echo $answer[0][3] ?></button>
-
-</br>
 
     <button class="submitButton" type="submit">Submit</button>
 </form>
- <!-- End Answers -->
-<!-- Score -->
-<?php
-$score=10;
-switch ($score){
-    case '<10';
-    echo "Fail. You can do better next time.";
-    break;
-    case '>10&&<15';
-    echo "You did well but can still do better.";
-    break;
-    case '15<';
-    echo "You Passed! Congradulations.";
-    break;
-}
-?>
-<!-- End Score -->
-
 
 <footer id="footer">
   <p>Created by: Andrew Steyn</p>
