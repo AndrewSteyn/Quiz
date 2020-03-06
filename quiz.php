@@ -11,7 +11,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 
-<title>20 questions to blow your mind</title>
+<title>Dota 2 Quiz</title>
 
 </head>
 
@@ -34,7 +34,7 @@
 </br>
     <!-- Header -->
     <div id="header">
-    <h1>How well do you know?</h1>
+    <h1>Test your Dota 2 Knowlege!</h1>
     </div>
     <!-- End Headr -->
 </br>
@@ -60,68 +60,68 @@
                            'Which of the following heroes has the highest base damage at level 1 in the game?',
                            'Which of the following skills deals only magic damage?',
                             ),
-                    array('quiztest.jpg',/*$big[1][0]*/
-                          'when.jpg',
-                          'where.jpg',
-                          'who.jpg',
-                          'with-what.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
-                          'who.jpg',
+                    array('images/dota2logo.jpg',/*$big[1][0]*/
+                          'images/creeps.jpg',
+                          'images/neutrals.jpg',
+                          'images/arcane.jpg',
+                          'images/ward.jpg',
+                          'images/boots.jpg',
+                          'images/midas.png',
+                          'images/roshan.jpg',
+                          'images/haste.jpg',
+                          'images/dayVnight.jpg',
+                          'images/snapfire.jpg',
+                          'images/ancient.jpg',
+                          'images/roshann.jpg',
+                          'images/agility.jpg',
+                          'images/tower.jpg',
+                          'images/summons.jpg',
+                          'images/tinker.jpg',
+                          'images/beats.jpg',
+                          'images/io.jpg',
+                          'images/invoker.jpg',
                         ),
-                    array('name',/*$big[2][0]*/
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                          '',
-                           '',    
+                    array('q0',/*$big[2][0]*/
+                          'q1',
+                          'q2',
+                          'q3',
+                          'q4',
+                          'q5',
+                          'q6',
+                          'q7',
+                          'q8',
+                          'q9',
+                          'q10',
+                          'q11',
+                          'q12',
+                          'q13',
+                          'q14',
+                          'q15',
+                          'q16',
+                          'q17',
+                          'q18',
+                          '119',    
                            ),
-                    array(array('value'),/*$big[3][0][0]*/
-                          array(''),   
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array(''),  
-                          array('')),
+                    array(array('val0'),/*$big[3][0][0]*/
+                          array('val1'),   
+                          array('val2'),   
+                          array('val3'),  
+                          array('val4'),  
+                          array('val5'),  
+                          array('val6'),  
+                          array('val7'),  
+                          array('val8'),  
+                          array('val9'),  
+                          array('val10'),  
+                          array('val11'),  
+                          array('val12'),  
+                          array('val13'),  
+                          array('val14'),  
+                          array('val15'),  
+                          array('val16'),  
+                          array('val17'),  
+                          array('val18'),  
+                          array('val19')),
                     array(array('1. At minute 4','2. At minute 5','3. At minute 6','4. At minute 10'),/*$big[3][1][0]*/
                           array('A. 4 melee creeps, 1 ranged creep','B. 3 melee creeps, 1 ranged creep','C. 4 melee creeps, 2 ranged creeps','D. 3 melee creeps, 2 ranged creeps'),
                           array('1. Centaur camp','2. Mud Golems','3. Hellbear camp','4. Wolf Camp'),
@@ -137,26 +137,27 @@
                           array('1. 8000HP','2. 9000HP','3. 10000HP','4. 15000HP'), /*10000*/  
                           array('1. Close to 2','2. Close to 3','3. Close to 4','4. Close to 5'),  /*close to 4*/
                           array('1. Once it has 220HP','2. Once it has 190HP','3. Once it has 160HP','4. Once it has 130HP'),  /*130HP*/
-                          array('1. Plague Ward','Serpent Ward','Lycan Wold','Hawk'),  /*Hawk*/
+                          array('1. Plague Ward','2. Serpent Ward','3. Lycan Wold','4. Hawk'),  /*Hawk*/
                           array('1. Intelligence','2. Strength','3. Agility','4. All in the same measure'),  
                           array('1. Physical','2. Magical','3. Universal','4. Composite'),  
                           array('1. Doom Bringer','2. Pudge','3. Treant Protector','4. Spirit Breaker'),  
-                          array('1. Heartstopper Aura','2. Hoof Stomp','3. Acid Spray','4.Weave'))  
+                          array('1. Heartstopper Aura','2. Hoof Stomp','3. Acid Spray','4. Weave'))  
                              );
+                            
     ?>
-<form role="form" method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
+<form role="form" method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>> 
 <?php
-for ($x=0; $x<count($big[0]); ++$x)?>{<?php
-     echo"\n".$big[2][$x];?>
-    <img class=image src="<?php echo $big[1][$x];?>">
-      <?php  for($z=0; $z,count($big[2]); ++$z)?>
-    <button class="button" type="radio" name="<?php echo"\n".$big[2][$x];?>" value="<?php echo"\n".$big[3][$x][$x]; ?>"><?php echo"\n".$big[4][$x][$z]; ?></button>
-</br>
-}
-
+for ($x=0; $x<count($big[0]); ++$x){
+     echo"\n".$big[0][$x];
+     echo'</br> <img class=image src="'.$big[1][$x].'">';
+       for($z=0; $z<count($big[4][0]); ++$z){
+       echo'</br><button class="button" type="radio" name="'. $big[2][$x]. '"value="'. $big[3][$x][0].'">'.$big[4][$x][$z].'</button></br>';
+}}
+?>
     <button class="submitButton" type="submit" value="submit" name="submit">Submit</button>
-</form>
-<?php echo $big[3][1][0] ?>
+</form> 
+
+
 <footer id="footer">
   <p>Created by: Andrew Steyn</p>
   <p>Contact information: <a id="email" href="andrewpvdrsteyn@gmail.com"> andrewpvdrsteyn@gmail.com</a>.</p>
