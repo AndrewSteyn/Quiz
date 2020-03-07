@@ -5,7 +5,6 @@
 #header {
   font-family:'Bangers';
   text-align: center;
-  width: 60%;
 }
 
 .image{
@@ -27,12 +26,17 @@
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover {
   background-color: green;
 }
-
+ h2 {
+   text-align: center;
+ }
 #answers {
   text-align: center;
   color: blue;
@@ -49,4 +53,8 @@
   padding: 10px 30px;
   text-align: center;
   font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }

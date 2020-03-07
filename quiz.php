@@ -102,60 +102,72 @@
                           'q18',
                           '119',    
                            ),
-                    array(array('val0'),/*$big[3][0][0]*/
-                          array('val1'),   
-                          array('val2'),   
-                          array('val3'),  
-                          array('val4'),  
-                          array('val5'),  
-                          array('val6'),  
-                          array('val7'),  
-                          array('val8'),  
-                          array('val9'),  
-                          array('val10'),  
-                          array('val11'),  
-                          array('val12'),  
-                          array('val13'),  
-                          array('val14'),  
-                          array('val15'),  
-                          array('val16'),  
-                          array('val17'),  
-                          array('val18'),  
-                          array('val19')),
-                    array(array('1. At minute 4','2. At minute 5','3. At minute 6','4. At minute 10'),/*$big[3][1][0]*/
-                          array('A. 4 melee creeps, 1 ranged creep','B. 3 melee creeps, 1 ranged creep','C. 4 melee creeps, 2 ranged creeps','D. 3 melee creeps, 2 ranged creeps'),
-                          array('1. Centaur camp','2. Mud Golems','3. Hellbear camp','4. Wolf Camp'),
-                          array('1. Boots of speed + Points Booster','2. Boots of Speed + Arcane Boots Recipe','3. Booots of Speed + Void Stone','4. Boots of Speed + Energy Booter'),    
-                          array('1. 8min','2. 6min','3. 5min','4. 7min'),
-                          array('1. Brown','2. Green','3. Blue','4. Red'),  
-                          array('1. 200','2. 400','3. 600','4. 800'),  
-                          array('1. 2500','2. 5000','3. 7500','4. 10000'),  
-                          array('1. 550 MS','2. 522 MS','3. 322 MS','4. 650 MS'),  
-                          array('1. 1600 during the day, 800 during the night','2. 2000 dauring the day, 800 during the night','3. 1600 during the day, 1000 during the night','4. 1800 during the day, 800 during the night'),  
-                          array('1. 20%','2. 25%','3. 30%','4. 35%'),  /*25%*/
-                          array('1. 2HP/s','2. 3HP/s','3. 4HP/s','4. 5HP/s'), /*3HP/s*/  
-                          array('1. 8000HP','2. 9000HP','3. 10000HP','4. 15000HP'), /*10000*/  
-                          array('1. Close to 2','2. Close to 3','3. Close to 4','4. Close to 5'),  /*close to 4*/
-                          array('1. Once it has 220HP','2. Once it has 190HP','3. Once it has 160HP','4. Once it has 130HP'),  /*130HP*/
-                          array('1. Plague Ward','2. Serpent Ward','3. Lycan Wold','4. Hawk'),  /*Hawk*/
-                          array('1. Intelligence','2. Strength','3. Agility','4. All in the same measure'),  
-                          array('1. Physical','2. Magical','3. Universal','4. Composite'),  
-                          array('1. Doom Bringer','2. Pudge','3. Treant Protector','4. Spirit Breaker'),  
-                          array('1. Heartstopper Aura','2. Hoof Stomp','3. Acid Spray','4. Weave'))  
+                    array(array('correct','wrong','wrong','wrong'),/*$big[3][0][0]*/
+                          array('wrong','correct','worng','wrong'),   
+                          array('wrong','wrong','correct','wrong'),   
+                          array('wrong','wrong','wrong','correct'),  
+                          array('wrong','wrong','wrong','correct'),  
+                          array('wrong','correct','wrong','wrong'),  
+                          array('correct','wrong','wrong','wrong'),  
+                          array('wrong','wrong','correct','wrong'),  
+                          array('wrong','correct','wrong','wrong'),  
+                          array('wrong','wrong','wrong','correct'),  
+                          array('wrong','correct','wrong','wrong'),  
+                          array('wrong','correct','wrong','wrong'),  
+                          array('wrong','wrong','correct','wrong'),  
+                          array('wrong','wrong','correct','wrong'),  
+                          array('wrong','wrong','wrong','correct'),  
+                          array('wrong','wrong','wrong','correct'),  
+                          array('correct','wrong','wrong','wrong'),  
+                          array('correct','wrong','wrong','wrong'),  
+                          array('wrong','wrong','correct','wrong'),   
+                          array('wrong','wrong','wrong','correct')),
+                    array(array('At minute 4','At minute 5','At minute 6','At minute 10'),/*$big[3][1][0]*/
+                          array('4 melee creeps, 1 ranged creep','3 melee creeps, 1 ranged creep','4 melee creeps, 2 ranged creeps','3 melee creeps, 2 ranged creeps'),
+                          array('Centaur camp','Mud Golems','Hellbear camp','Wolf Camp'),
+                          array('Boots of speed + Points Booster','Boots of Speed + Arcane Boots Recipe','Booots of Speed + Void Stone','Boots of Speed + Energy Booter'),    
+                          array('8min','6min','5min','7min'),
+                          array('Brown','Green','Blue','Red'),  
+                          array('200','400','600','800'),  
+                          array('2500','5000','7500','10000'),  
+                          array('550 MS','522 MS','322 MS','650 MS'),  
+                          array('1600 during the day, 800 during the night','2000 dauring the day, 800 during the night','1600 during the day, 1000 during the night','1800 during the day, 800 during the night'),  
+                          array('20%','25%','30%','35%'),  /*25%*/
+                          array('2HP/s','3HP/s','4HP/s','5HP/s'), /*3HP/s*/  
+                          array('8000HP','9000HP','10000HP','15000HP'), /*10000*/  
+                          array('Close to 2','Close to 3','Close to 4','Close to 5'),  /*close to 4*/
+                          array('Once it has 220HP','Once it has 190HP','Once it has 160HP','Once it has 130HP'),  /*130HP*/
+                          array('Plague Ward','Serpent Ward','Lycan Wold','Hawk'),  /*Hawk*/
+                          array('Intelligence','Strength','Agility','All in the same measure'),  
+                          array('Physical','Magical','Universal','Composite'),  
+                          array('Doom Bringer','Pudge','Treant Protector','Spirit Breaker'),  
+                          array('Rupture','Vendetta','Acid Spray','Weave'))  
                              );
                             
     ?>
 <form role="form" method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>> 
 <?php
 for ($x=0; $x<count($big[0]); ++$x){
-     echo"\n".$big[0][$x];
+     echo"\n".'<h2>'.$big[0][$x].'</h2>';
      echo'</br> <img class=image src="'.$big[1][$x].'">';
        for($z=0; $z<count($big[4][0]); ++$z){
-       echo'</br><button class="button" type="radio" name="'. $big[2][$x]. '"value="'. $big[3][$x][0].'">'.$big[4][$x][$z].'</button></br>';
+       echo'</br><button class="button" type="radio" name="'. $big[2][$x]. '"value="'. $big[3][$x][$z].'">'.$big[4][$x][$z].'</button>';
 }}
 ?>
     <button class="submitButton" type="submit" value="submit" name="submit">Submit</button>
 </form> 
+
+<?php
+if (isset($_POST["submit"])){
+  $total = 0;
+    for ($i = 0; $i <=19; $i++){
+        $ans.$i = $_POST["q".$i];
+        if($ans.$i =="correct"){$total++;}
+    }
+    echo "<div id = 'resilts'>$total / 20</div>";
+}
+
+?>
 
 
 <footer id="footer">
