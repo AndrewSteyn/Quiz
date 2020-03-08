@@ -28,6 +28,8 @@
   margin-left: auto;
   margin-right: auto;
   font-family:'Inder', sans-serif;
+  border-radius: 25px;
+  width: 60%;
 }
 
 .button::selection {
@@ -39,10 +41,6 @@
    font-family:'Inder', sans-serif;
 
  }
-#answers {
-  text-align: center;
-  color: blue;
-}
 
 #question {
   text-align: center;
