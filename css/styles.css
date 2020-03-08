@@ -31,6 +31,9 @@
   border-radius: 25px;
   width: 60%;
 }
+img {
+  border-radius: 25px; 
+}
 
 .button::selection {
   background-color: green;
