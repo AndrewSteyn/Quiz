@@ -147,6 +147,31 @@
                              );
                             
     ?>
+    <!-- Score -->
+    <?php
+if (isset($_POST["submit"])){
+
+    $total = 0;
+    for ($i = 0; $i <=19; $i++){
+
+      $m[$i] = $_POST["q".$i];
+    if($m[$i] == 'correct'){$total++;}
+    }
+    echo '<div class ="results">'.$total.'/ 20</div>';
+    if ($total<10) {
+      echo '<div class ="results">You can do better, give it another try.</dv>';
+  } elseif ($total>=10&&$total<16) {
+      echo '<div class ="results">Your knowledge is Good.</div>';
+  } else {
+      echo '<div class ="results">You are Amazing!</div>';
+  }
+}
+
+?>
+<!-- End Score -->
+
+
+<!-- info -->
 <form role="form" method="POST" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>> 
 <?php
 for ($x=0; $x<count($big[0]); ++$x){
@@ -158,20 +183,8 @@ for ($x=0; $x<count($big[0]); ++$x){
 ?>
     <button class="submitButton" type="submit" value="submit" name="submit">SUBMIT</button>
 </form> 
+<!-- End Info -->
 
-<?php
-if (isset($_POST["submit"])){
-
-    $total = 0;
-    for ($i = 0; $i <=19; $i++){
-
-      $m[$i] = $_POST["q".$i];
-    if($m[$i] == 'correct'){$total++;}
-    }
-    echo "<div id = 'resilts'>$total / 20</div>";
-}
-
-?>
 </br>
 </div>
 <footer id="footer">
@@ -185,3 +198,4 @@ if (isset($_POST["submit"])){
 </body>
 
 </html>
+

@@ -73,6 +73,13 @@
   color: white;
 }
 
+.results {
+  font-family:'Inder', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
 @media screen and (max-width: 800px) {
   #slim {
       width: 100%;
