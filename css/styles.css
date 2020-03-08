@@ -2,6 +2,9 @@
   color: black;
   background-color: white;
 }
+.navbar-custom {
+  background-color: #4aff26;
+}
 #header {
   font-family:'Cormorant SC', serif;
   text-align: center;
@@ -21,7 +24,6 @@
   padding: 15px 25px;
   text-align: center;
   font-size: 16px;
-  cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -31,6 +33,7 @@
 .button::selection {
   background-color: green;
 }
+
  h2 {
    text-align: center;
    font-family:'Inder', sans-serif;
@@ -44,14 +47,18 @@
 #question {
   text-align: center;
 }
-
+input{
+  cursor: pointer;
+  padding: 20px;
+}
 .submitButton {
-  background-color: rgb(60, 112, 224);
+  font-family:'Inder', sans-serif;
+  background-color: rgb(255, 255, 255);
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px 30px;
   text-align: center;
-  font-size: 16px;
+  font-size: 25px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -68,9 +75,9 @@
 #footer {
   width: 100%;
   background-color: rgb(2, 66, 4);
-  height: 60px;
   text-align: center;
   color: white;
+  padding-top: 15px;
 }
 
 .results {
