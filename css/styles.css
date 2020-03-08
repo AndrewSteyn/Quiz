@@ -11,7 +11,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 60%;
 }
 
 #questions{
@@ -31,7 +31,7 @@
   margin-right: auto;
 }
 
-.button:hover {
+.button::selection {
   background-color: green;
 }
  h2 {
@@ -47,7 +47,7 @@
 }
 
 .submitButton {
-  background-color: rgb(12, 112, 16);
+  background-color: rgb(60, 112, 224);
   border: none;
   color: white;
   padding: 10px 30px;
@@ -57,4 +57,26 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+
+#slim {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(130, 248, 134);
+}
+
+#footer {
+  width: 100%;
+  background-color: rgb(2, 66, 4);
+  height: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  #slim {
+      width: 100%;
+  }
 }

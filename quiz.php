@@ -30,6 +30,7 @@
     </ul>
   </div>
 </nav>
+<div id="slim">
 <!-- End Nav -->
 </br>
     <!-- Header -->
@@ -151,25 +152,27 @@ for ($x=0; $x<count($big[0]); ++$x){
      echo"\n".'<h2>'.$big[0][$x].'</h2>';
      echo'</br> <img class=image src="'.$big[1][$x].'">';
        for($z=0; $z<count($big[4][0]); ++$z){
-       echo'</br><button class="button" type="radio" name="'. $big[2][$x]. '"value="'. $big[3][$x][$z].'">'.$big[4][$x][$z].'</button>';
+       echo'</br><button class="button" type="radio" name="'. $big[2][$x]. '" value="'. $big[3][$x][$z].'">'.$big[4][$x][$z].'</button>';
 }}
 ?>
-    <button class="submitButton" type="submit" value="submit" name="submit">Submit</button>
+    <button class="submitButton" type="submit" value="submit" name="submit">SUBMIT</button>
 </form> 
 
 <?php
 if (isset($_POST["submit"])){
-  $total = 0;
-    for ($i = 0; $i <=19; $i++){
-        $ans.$i = $_POST["q".$i];
-        if($ans.$i =="correct"){$total++;}
+
+    $total = 0;
+    for ($i = 0; $i <=count($big(0)); $i++){
+
+      $m[$i] = $_POST["q".$i];
+    if($m[$i] == 'correct'){$total++;}
     }
     echo "<div id = 'resilts'>$total / 20</div>";
 }
 
 ?>
-
-
+</br>
+</div>
 <footer id="footer">
   <p>Created by: Andrew Steyn</p>
   <p>Contact information: <a id="email" href="andrewpvdrsteyn@gmail.com"> andrewpvdrsteyn@gmail.com</a>.</p>
