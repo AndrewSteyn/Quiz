@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styles.css">
 
-<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+SC:700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inder&display=swap" rel="stylesheet">
 
 <title>Dota 2 Quiz</title>
 
@@ -101,7 +102,7 @@
                           'q16',
                           'q17',
                           'q18',
-                          '119',    
+                          'q19',    
                            ),
                     array(array('correct','wrong','wrong','wrong'),/*$big[3][0][0]*/
                           array('wrong','correct','worng','wrong'),   
@@ -152,7 +153,7 @@ for ($x=0; $x<count($big[0]); ++$x){
      echo"\n".'<h2>'.$big[0][$x].'</h2>';
      echo'</br> <img class=image src="'.$big[1][$x].'">';
        for($z=0; $z<count($big[4][0]); ++$z){
-       echo'</br><button class="button" type="radio" name="'. $big[2][$x]. '" value="'. $big[3][$x][$z].'">'.$big[4][$x][$z].'</button>';
+       echo'</br><div class="button"><input type="radio" name="'. $big[2][$x]. '" value="'. $big[3][$x][$z].'"/><label for="'. $big[2][$x].'">'.$big[4][$x][$z].'</label></div>';
 }}
 ?>
     <button class="submitButton" type="submit" value="submit" name="submit">SUBMIT</button>
@@ -162,7 +163,7 @@ for ($x=0; $x<count($big[0]); ++$x){
 if (isset($_POST["submit"])){
 
     $total = 0;
-    for ($i = 0; $i <=count($big(0)); $i++){
+    for ($i = 0; $i <=19; $i++){
 
       $m[$i] = $_POST["q".$i];
     if($m[$i] == 'correct'){$total++;}

@@ -3,7 +3,7 @@
   background-color: white;
 }
 #header {
-  font-family:'Bangers';
+  font-family:'Cormorant SC', serif;
   text-align: center;
 }
 
@@ -12,10 +12,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-}
-
-#questions{
-  text-align: center;
 }
 
 .button {
@@ -29,6 +25,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-family:'Inder', sans-serif;
 }
 
 .button::selection {
@@ -36,6 +33,8 @@
 }
  h2 {
    text-align: center;
+   font-family:'Inder', sans-serif;
+
  }
 #answers {
   text-align: center;
@@ -72,7 +71,6 @@
   height: 60px;
   text-align: center;
   color: white;
-  padding-top: 20px;
 }
 
 @media screen and (max-width: 800px) {
