@@ -9,7 +9,9 @@
   font-family:'Cormorant SC', serif;
   text-align: center;
 }
-
+h1{
+  font-size: 80px;
+}
 .image{
   display: block;
   margin-left: auto;
@@ -79,6 +81,7 @@ input{
   text-align: center;
   color: white;
   padding-top: 15px;
+  margin-bottom: 0px;
 }
 
 .results {
