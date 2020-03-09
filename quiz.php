@@ -178,7 +178,7 @@ for ($x=0; $x<count($big[0]); ++$x){
      echo"\n".'<h2>'.$big[0][$x].'</h2>';
      echo'</br> <img class=image src="'.$big[1][$x].'">';
        for($z=0; $z<count($big[4][0]); ++$z){
-       echo'</br><div class="button"><input type="radio" name="'. $big[2][$x]. '" value="'. $big[3][$x][$z].'"/><label for="'. $big[2][$x].'">'.$big[4][$x][$z].'</label></div>';
+       echo'</br><div class="button"><input type="radio" name="'. $big[2][$x]. '" value="'. $big[3][$x][$z].'"required /><label for="'. $big[2][$x].'">'.$big[4][$x][$z].'</label></div>';
 }}
 ?>
     <button class="submitButton" type="submit" value="submit" name="submit">SUBMIT</button>
