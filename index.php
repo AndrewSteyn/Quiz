@@ -31,15 +31,15 @@
     </ul>
   </div>
 </nav>
-<div id="slim">
-<!-- End Nav -->
-</br>
+  <div id="slim">
+    <!-- End Nav -->
+    </br>
     <!-- Header -->
     <div id="header">
-    <h1>Test your Dota 2 Knowlege!</h1>
+      <h1>Test your Dota 2 Knowlege!</h1>
     </div>
     <!-- End Headr -->
-</br>
+    </br>
     <?php
         $big = array(array('When does the first night start?',/*$big[0][0]*/
                            'How many melee and ranged creeps spawn in the first wave, for only one lane?',
@@ -147,23 +147,23 @@
                              );
                             
     ?>
-    <!-- Score -->
-    <?php
-if (isset($_POST["submit"])){
+        <!-- Score -->
+        <?php
+      if (isset($_POST["submit"])){
 
-    $total = 0;
-    for ($i = 0; $i <=19; $i++){
+            $total = 0;
+          for ($i = 0; $i <=19; $i++){
 
-      $m[$i] = $_POST["q".$i];
-    if($m[$i] == 'correct'){$total++;}
-    }
-    echo '<div class ="results">'.$total.'/ 20</div>';
-    if ($total<10) {
-      echo '<div class ="results">You can do better, give it another try.</dv>';
-  } elseif ($total>=10&&$total<16) {
-      echo '<div class ="results">Your knowledge is Good.</div>';
-  } else {
-      echo '<div class ="results">You are Amazing!</div>';
+            $m[$i] = $_POST["q".$i];
+          if($m[$i] == 'correct'){$total++;}
+            }
+            echo '<div class ="results">'.$total.'/ 20</div>';
+            if ($total<10) {
+              echo '<div class ="results">You can do better, give it another try.</dv>';
+              } elseif ($total>=10&&$total<16) {
+                echo '<div class ="results">Your knowledge is Good.</div>';
+                } else {
+                  echo '<div class ="results">You are Amazing!</div>';
   }
 }
 
